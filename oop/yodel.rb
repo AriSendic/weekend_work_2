@@ -9,9 +9,16 @@
 # constructor accordingly.
 
 class Yodel
-
+  attr_reader :segment, :count
+  def initialize(options)
+    @segment = options[:segment]
+    @count = options[:count]
+  end
+  
+  def articulate 
+    segment * count.to_i
+  end
 end
-
 
 # Driver code - don't touch anything below this line.
 puts "TESTING the Yodel class..."

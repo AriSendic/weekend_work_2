@@ -1,9 +1,13 @@
 # Complete the method called split_array, which two parameters, the first being an array, and the second being an integer. The method will then create an array of other arrays, each one being the size of the indicated by the second parameter. See the driver code for examples.
 
 def split_array(array, array_size)
-
+  result = []
+  until array.empty?
+    x = array.shift(array_size)
+    result << x
+  end
+  result
 end
-
 # Driver code - don't touch anything below this line.
 puts "TESTING split_array..."
 puts
