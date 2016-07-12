@@ -19,7 +19,8 @@ class Yodel
     segment * count.to_i
   end
 end
-
+# You're using the segment method (that you 
+# created using attr_reader), which in turn returns the @segment instance variable. 
 # Driver code - don't touch anything below this line.
 puts "TESTING the Yodel class..."
 puts
